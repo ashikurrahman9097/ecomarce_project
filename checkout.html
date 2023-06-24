@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    
+    <!--Main Css -->
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+     <!--Header Section-->
+    <header>
+        <div class="logo">
+          <a href="ecomarce.html"><img src="images\logo.png" alt="head-image" style="display: flex; width: 10%; padding-bottom: 100px; "></a>
+      </div>
+    </header>
+    <!--Heading section-->
+        <div class="heading">
+            <h2>Your information</h2>
+            <div id="display-info">
+                <h3 style="display: flex; justify-content: space-between; margin-left: 80%; font-size: 35px; text-decoration: underline;">Show info</h3>
+            </div>
+            <!--Form section-->
+            <div class="form">
+                <label for="css">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                    <h3>E-mail</h3>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                    <h3>Phone</h3>
+                    <input type="text" placeholder="Enter your Phone number" id="phone">
+                     <h3>Address</h3>
+                     <input type="text" placeholder="Enter your address" id="address">
+                </label>
+            </div>
+            <button id="btn-submit">Submit</button>
+            
+        </div>
+        
+        <!--Start JS-->
+          <script>
+
+            //Id declaration from input field and button
+            const formname= document.getElementById("name");
+            const formemail= document.getElementById("email");
+            const formphone= document.getElementById("phone");
+            const formaddress= document.getElementById("address");
+            const btnsubmit= document.getElementById("btn-submit");
+            const displayInfo = document.getElementById("display-info");
+            
+            // Event of this button
+            btnsubmit.addEventListener("click", function(){
+                console.log("Button has been clicked"); // Show the output in inspact 
+            
+            // Create the name element
+                const nameElement = document.createElement("p");
+                 nameElement.textContent = "Name: " + formname.value;
+
+            // Create the email element
+                const emailElement = document.createElement("p");
+                emailElement.textContent = "Email: " + formemail.value;
+
+            // Create the phone element
+                const phoneElement = document.createElement("p");
+                 phoneElement.textContent = "Phone: " + formphone.value;
+            
+            // Create the address element     
+                const addressElement = document.createElement("p");
+                 addressElement.textContent = "Address: " + formaddress.value;
+
+           // Append the form information to the display
+
+        displayInfo.innerHTML = ""; // Clear previous content
+        displayInfo.appendChild(nameElement);
+        displayInfo.appendChild(emailElement);
+        displayInfo.appendChild(phoneElement);
+        displayInfo.appendChild(addressElement);
+        
+      })
+        
+      </script>
+    </body>
+</html>

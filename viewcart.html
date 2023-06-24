@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewcart page</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="logo">
+          <a href="ecomarce.html"><img src="images\logo.png" alt="head-image" style="display: flex; width: 15%; padding-bottom: 100px;"></a>
+      </div>
+    </header>
+    
+        <!--View cart item section -->
+      <div class="cart-item"></div>
+
+        <!--View cart details section -->
+        <div class="item-details" id="cardDetails"></div>
+
+        <!--Total price section-->
+      <div class="total-section">
+        <span>Total:</span>
+      </div>
+
+        <!--checkout button section-->
+        <div class="action-buttons">
+          <a href="checkout.html"><button id="btn-checkout">Proceed to Checkout</button></a>
+      </div>
+
+      <!--Start JS-->
+        <script>
+         // Class declaration cart item element
+          let cartItems = document.getElementsByClassName("cart-item");
+
+        // Class declaration item details element
+          let itemDetails = document.querySelector(".item-details");
+
+        // price from local storage
+          let itemPrice = JSON.parse(localStorage.getItem("cartItems"))
+
+          // Show the item price from local storage
+            console.log(itemPrice)
+
+          // Id declaration of view cart item section
+            const productName = document.getElementById("cardDetails")
+          
+            // Id declaration from local storage
+          const Price = document.getElementById("Price")
+            itemPrice.map(item => {
+            // Create a new HTML element for each item
+            const newCardDetails = document.createElement("div")
+            newCardDetails.innerHTML = `<h2>${item.name}</h2> <p>${item.price}</p>`
+            productName.appendChild(newCardDetails);
+        });
+      </script>
+    </body>
+    </html>
+    
+    
+    
+    

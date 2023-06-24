@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!--Main css-->
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+     <!--Header Section-->
+     <header>
+        <div class="logo">
+           <a href="ecomarce.html"><img src="images\logo.png" alt="head-image" style="display: flex; width: 15%; padding-bottom: 100px;"></a>
+      </div>
+
+        <!--Signup form section-->
+    <div class="container">
+        <h2>Registration now</h2>
+        <form id="signup-form">
+            <!--Username Field-->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+          </div>
+
+          <!--Email Field-->
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+          </div>
+
+          <!--Password Field-->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
+
+          <!--Confarm password Field-->
+          <div class="form-group">
+            <label for="password">Confarm Password</label>
+            <input type="password" id="con-password" placeholder="Enter your confarm password" required>
+          </div>
+
+          <!--Button Field-->
+          <div class="form-group">
+            <button type="submit" id="btn-signup">Signup</button>
+          </div>
+        </form>
+      </div>
+
+        <!--Start JS-->
+        <script>
+           
+           // Id declaration of document and click event for signup button
+           document.getElementById("signup-form").addEventListener("submit", function(event) {
+            
+            // Prevent form submission
+              event.preventDefault();
+
+            // Display an alert when the form is submitted
+            alert("Form submitted successfully!");
+        });
+      </script>
+    </body>
+</html>

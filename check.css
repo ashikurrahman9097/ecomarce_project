@@ -1,0 +1,61 @@
+body{
+    background: white;
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: white;
+}
+.logo{
+    height: 100%;
+    width: 50%;
+    padding-bottom: 25%;
+  }
+ .heading{
+    background: rgb(235, 234, 234);
+    padding: 2px;
+    
+ }
+ .heading>h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 6px;
+}
+.form{
+    margin-left: 80px;
+    margin-bottom: 26px;
+}
+#name{
+    padding: 20px;
+    width: 250px;
+    height: 2px;
+}
+#email{
+    padding: 20px;
+    width: 250px;
+    height: 2px;
+}
+#phone{
+    padding: 20px;
+    width: 250px;
+    height: 2px; 
+}
+#address{
+    padding: 20px;
+    width: 250px;
+    height: 2px; 
+}
+#btn-submit{
+    background: rgba(219, 19, 19, 0.788);
+    margin-left: 195px;
+    padding: 12px;
+    width: 85px;
+    cursor: pointer;
+    color: white;
+}
+#btn-submit:hover{
+    background-color: rgb(206, 16, 16);
+}
+
