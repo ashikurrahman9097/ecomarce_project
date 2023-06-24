@@ -3,10 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ecomarce site</title>
+    <!--Main css-->
+    <link rel="stylesheet" href="eco.css">
 </head>
-<body>
-    <h1>hello</h1>
-    <p>ghdhgj</p>
+  <body>
+    <!--Header Section-->
+    <header>
+      <div class="logo">
+         <a href="ecomarce.html"><img src="images\logo.png" alt="head-image" style="display: flex; width: 15%; padding-bottom: 100px;"></a>
+    </div>
+    <!--Search bar Section-->
+    <div class="search-container">
+      <input type="text" placeholder="Search product">
+      <button type="submit"><i class="fa-regular fa-magnifying-glass" style="color: #0d0d0d;"></i></button>
+       <img src="images/icons8-google-web-search-50.png" alt="search-icon" style="cursor: pointer;">
+    </div>
+    <!-- Cart icon section -->
+    <div class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+        <a href="viewcart.html"><img src="images/cart-shopping-solid.svg" alt="cart-icon" style="margin-top: 20px; cursor: pointer;"></a>
+      <div class="popup" id="cart-popup">
+        <ul id="cartItems"></ul>
+      </div>  
+       <!-- Cart count section -->  
+      <span class="cart-count">0</span>
+    </div>
+    <!--For account Login and Signup button-->
+      <div class="btn">
+        <a href="login.html"><button id="btn-login">Login</button></a>
+         <button id="btn-signup">Signup</button>
+      </div>
+  </header>
+  
+  <!-- Add cart section first -->
+  <div class="card">
+    <img src="images\download.jpg" alt="Product Image">
+    <h3>Mango</h3>
+    <p>Price: 60 Tk./KG</p>
+    <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+    <button class="add-to-cart">Add to Cart</button>
+    <button id="decrementbtn">-</button>
+    <span id="number">1</span>
+    <button id="incrementbtn">+</button>
+  </div>
+      <!--Add to cart section 1-->
+      <div class="card">
+        <img src="images\apples.jpg" alt="Product Image">
+        <h3>Apple</h3>
+        <p><b>Price: 150 Tk./KG</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn1">-</button>
+        <span id="number1">1</span>
+        <button id="incrementbtn1">+</button>
+      </div>
+       <!--Add to cart section 2 -->
+      <div class="card">
+        <img src="images\images.jpg" alt="Product Image">
+        <h3>Strowbarry</h3>
+        <p><b>Price: 400 Tk./KG</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn2">-</button>
+        <span id="number2">1</span>
+        <button id="incrementbtn2">+</button>
+      </div>
+
+       <!--Add to cart section 3 -->
+      <div class="card">
+        <img src="images\watarlemon .jpg" alt="Product Image">
+        <h3>waterlemon</h3>
+        <p><b>Price: 250 Tk./Pc</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn3">-</button>
+        <span id="number3">1</span>
+        <button id="incrementbtn3">+</button>
+      </div>
+
+        <!--Add to cart section 4 -->
+      <div class="card">
+        <img src="images\pineapple.jpg" alt="Product Image">
+        <h3>Pineapple</h3>
+        <p><b>Price: 40 Tk./Pc</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn4">-</button>
+        <span id="number4">1</span>
+        <button id="incrementbtn4">+</button>
+      </div>
+
+       <!--Add to cart section 5 -->
+      <div class="card">
+        <img src="images\1635239105.Boroi.jpg" alt="Product Image">
+        <h3>Boroi</h3>
+        <p><b>Price: 60 Tk./KG</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn5">-</button>
+        <span id="number5">1</span>
+        <button id="incrementbtn5">+</button>
+      </div>
+
+        <!--Add to cart section 6 -->
+      <div class="card">
+        <img src="images\pumpkin.jpg" alt="Product Image">
+        <h3>pumkin</h3>
+        <p><b>Price: 30 Tk./KG</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn6">-</button>
+        <span id="number6">1</span>
+        <button id="incrementbtn6">+</button>
+      </div>
+
+        <!--Add to cart section 7 -->
+      <div class="card">
+        <img src="images\AMBER-DATES-KHEJUR-500G.jpg" alt="Product Image">
+        <h3>AMBER-DATES-KHEJUR-500G</h3>
+        <p><b>Price: 600 Tk./KG</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn7">-</button>
+        <span id="number7">1</span>
+        <button id="incrementbtn7">+</button>
+      </div>
+
+        <!--Add to cart section 8 -->
+      <div class="card">
+        <img src="images/0316608_vegetable-korola-small-uchsse-kg.jpeg"alt="Product Image">
+        <h3>Deshi Korola-1 Kg</h3>
+        <p><b>Price: 60 Tk</b></p>
+        <a href="checkout.html"><button class="btn-buy">Buy Now</button></a>
+        <button class="add-to-cart">Add to Cart</button>
+        <button id="decrementbtn8">-</button>
+        <span id="number8">1</span>
+        <button id="incrementbtn8">+</button>
+      </div>
+
+        <!--Footer section-->
+      <div style="height: 200px;width: 100%;
+      background-color: rgb(49, 47, 47);float: left;" class="footer">
+    </div>
+    
+      <!--Start JS-->
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+          let addTocartbtn = document.getElementsByClassName("add-to-cart");
+          let cartCount = document.querySelector(".cart-count");
+          let cartItems = localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [];
+  
+          cartCount.innerText = cartItems.length;
+  
+        for (let i = 0; i < addTocartbtn.length; i++) {
+          addTocartbtn[i].addEventListener("click", addToCart);
+      }
+  
+          function addToCart() {
+          let product = {
+          name: this.parentNode.querySelector("h3").innerText,
+          price: this.parentNode.querySelector("p").innerText
+        };
+  
+         cartItems.push(product);
+         localStorage.setItem("cartItems", JSON.stringify(cartItems));
+          cartCount.innerText = cartItems.length;
+          alert("Added to cart");
+      }
+    });
+
+        // Id declaration of document
+          const numberElement = document.getElementById('number');
+          const incrementBtn = document.getElementById('incrementbtn');
+          const decrementBtn = document.getElementById('decrementbtn');
+  
+         // Assigning the value of number
+          let number = 1;
+          numberElement.innerText = number;
+
+        // Click for increment button
+          incrementBtn.addEventListener("click", function() {
+            number++;
+            numberElement.innerText = number;
+  });
+
+        // Click for decrement button
+          decrementBtn.addEventListener("click", function() {
+            if (number > 1) {
+              number--;
+              numberElement.innerText = number;
+
+            if( number<=1){
+              decrementBtn.disabled = true;
+      }
+          else{
+            decrementBtn.disabled = false; 
+      }
+    }
+  });
+
+        // Id declaration of document 1
+        const numberElement1 = document.getElementById('number1');
+        const incrementBtn1 = document.getElementById('incrementbtn1');
+        const decrementBtn1 = document.getElementById('decrementbtn1');
+  
+       // Assigning the value of number
+        let number1 = 1;
+        numberElement1.innerText = number1;
+
+      // Click for increment button
+        incrementBtn1.addEventListener("click", function() {
+        number1++;
+        numberElement1.innerText = number1;
+  });
+
+  // Click for decrement button
+  decrementBtn1.addEventListener("click", function() {
+    if (number1 > 1) {
+      number1--;
+      numberElement1.innerText = number1;
+
+      if( number1<=1){
+        decrementBtn1.disabled = true;
+      }
+      else{
+        decrementBtn1.disabled = false; 
+      }
+    }
+  });
+
+    // Id declaration of document 2
+   const numberElement2 = document.getElementById('number2');
+    const incrementBtn2 = document.getElementById('incrementbtn2');
+    const decrementBtn2 = document.getElementById('decrementbtn2');
+  
+     // Assigning the value of number
+  let number2 = 1;
+  numberElement2.innerText = number2;
+
+  // Click for increment button
+  incrementBtn2.addEventListener("click", function() {
+    number2++;
+    numberElement2.innerText = number2;
+  });
+
+  // Click for decrement button
+  decrementBtn2.addEventListener("click", function() {
+    if (number2 > 1) {
+      number2--;
+      numberElement2.innerText = number2;
+
+      if( number2<=1){
+        decrementBtn2.disabled = true;
+      }
+      else{
+        decrementBtn2.disabled = false; 
+      }
+    }
+  });
+
+  // Id declaration of document 3
+    const numberElement3 = document.getElementById('number3');
+    const incrementBtn3 = document.getElementById('incrementbtn3');
+    const decrementBtn3 = document.getElementById('decrementbtn3');
+  
+  // Assigning the value of number
+  let number3 = 1;
+  numberElement3.innerText = number3;
+
+  // Click for increment button
+  incrementBtn3.addEventListener("click", function() {
+    number3++;
+    numberElement3.innerText = number3;
+  });
+
+  // Click for decrement button
+  decrementBtn3.addEventListener("click", function() {
+    if (number3 > 1) {
+      number3--;
+      numberElement3.innerText = number3;
+
+      if( number3<=1){
+        decrementBtn3.disabled = true;
+      }
+      else{
+        decrementBtn3.disabled = false; 
+      }
+    }
+  });
+
+      // Id declaration of document 4
+      const numberElement4 = document.getElementById('number4');
+      const incrementBtn4 = document.getElementById('incrementbtn4');
+      const decrementBtn4 = document.getElementById('decrementbtn4');
+  
+    // Assigning the value of number
+    let number4 = 1;
+    numberElement4.innerText = number4;
+
+  // Click for increment button
+  incrementBtn4.addEventListener("click", function() {
+    number4++;
+    numberElement4.innerText = number4;
+  });
+
+    // Click for decrement button
+      decrementBtn4.addEventListener("click", function() {
+        if (number4 > 1) {
+          number4--;
+          numberElement4.innerText = number4;
+
+        if( number4<=1){
+          decrementBtn4.disabled = true;
+      }
+      else{
+          decrementBtn4.disabled = false; 
+      }
+    }
+  });
+
+      // Id declaration of document 5
+      const numberElement5 = document.getElementById('number5');
+      const incrementBtn5 = document.getElementById('incrementbtn5');
+      const decrementBtn5 = document.getElementById('decrementbtn5');
+  
+      // Assigning the value of number
+      let number5 = 1;
+      numberElement5.innerText = number5;
+
+      // Click for increment button
+      incrementBtn5.addEventListener("click", function() {
+      number5++;
+      numberElement5.innerText = number5;
+  });
+
+      // Click for decrement button
+      decrementBtn5.addEventListener("click", function() {
+        if (number5 > 1) {
+          number5--;
+          numberElement5.innerText = number5;
+
+        if( number5<=1){
+          decrementBtn5.disabled = true;
+      }
+      else{
+          decrementBtn5.disabled = false; 
+      }
+    }
+  });
+
+      // Id declaration of document 6
+        const numberElement6 = document.getElementById('number6');
+        const incrementBtn6 = document.getElementById('incrementbtn6');
+        const decrementBtn6 = document.getElementById('decrementbtn6');
+  
+      // Assigning the value of number
+        let number6 = 1;
+        numberElement6.innerText = number6;
+
+      // Click for increment button
+        incrementBtn6.addEventListener("click", function() {
+        number6++;
+        numberElement6.innerText = number6;
+  });
+
+  // Click for decrement button
+    decrementBtn6.addEventListener("click", function() {
+      if (number6 > 1) {
+        number6--;
+        numberElement6.innerText = number6;
+
+      if( number6<=1){
+        decrementBtn6.disabled = true;
+      }
+      else{
+        decrementBtn6.disabled = false; 
+      }
+    }
+  });
+
+    // Id declaration of document 7
+    const numberElement7 = document.getElementById('number7');
+    const incrementBtn7 = document.getElementById('incrementbtn7');
+    const decrementBtn7 = document.getElementById('decrementbtn7');
+  
+    // Assigning the value of number
+    let number7 = 1;
+    numberElement7.innerText = number7;
+
+    // Click for increment button
+    incrementBtn7.addEventListener("click", function() {
+    number7++;
+    numberElement7.innerText = number7;
+  });
+
+    // Click for decrement button
+    decrementBtn7.addEventListener("click", function() {
+      if (number7 > 1) {
+        number7--;
+        numberElement7.innerText = number7;
+
+      if( number7<=1){
+        decrementBtn7.disabled = true;
+      }
+      else{
+        decrementBtn7.disabled = false; 
+      }
+    }
+  });
+
+    // Id declaration of document 8
+    const numberElement8 = document.getElementById('number8');
+    const incrementBtn8 = document.getElementById('incrementbtn8');
+    const decrementBtn8 = document.getElementById('decrementbtn8');
+  
+    // Assigning the value of number
+    let number8 = 1;
+    numberElement8.innerText = number8;
+
+    // Click for increment button
+    incrementBtn8.addEventListener("click", function() {
+    number8++;
+    numberElement8.innerText = number8;
+  });
+
+    // Click for decrement button
+    decrementBtn8.addEventListener("click", function() {
+      if (number8 > 1) {
+        number8--;
+        numberElement8.innerText = number8;
+
+      if( number8<=1){
+        decrementBtn8.disabled = true;
+      }
+      else{
+        decrementBtn8.disabled = false; 
+      }
+    }
+  });
+
+  //  Query selection document from cart icon class
+var cartIcon = document.querySelector('.cart-icon');
+
+// Id declaration for the cart window element
+var cartWindow = document.getElementById('cart-popup');
+
+// click to the cart icon
+cartIcon.addEventListener('click', function() {
+  // Display of the cart window
+  cartWindow.style.display = (cartWindow.style.display === 'block') ? 'none' : 'block';
+});
+
+  </script>
 </body>
 </html>
