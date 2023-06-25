@@ -8,50 +8,42 @@
     <link rel="stylesheet" href="eco.css">
 </head>
   <body>
+
     <!--Header Section-->
     <header>
       <div class="logo">
          <a href="ecomarce.html"><img src="images\logo.png" alt="head-image" style="display: flex; width: 15%; padding-bottom: 100px;"></a>
     </div>
+
     <!--Search bar Section-->
     <div class="search-container">
       <input type="text" placeholder="Search product">
       <button type="submit"><i class="fa-regular fa-magnifying-glass" style="color: #0d0d0d;"></i></button>
        <img src="images/icons8-google-web-search-50.png" alt="search-icon" style="cursor: pointer;">
     </div>
+
     <!-- Cart icon section -->
     <div class="cart-icon">
       <i class="fa-solid fa-cart-shopping"></i>
         <a href="viewcart.html"><img src="images/cart-shopping-solid.svg" alt="cart-icon" style="margin-top: 20px; cursor: pointer;"></a>
       <div class="popup" id="cart-popup">
         <ul id="cartItems"></ul>
-      </div>  
+      </div> 
+
        <!-- Cart count section -->  
       <span class="cart-count">0</span>
     </div>
+
     <!--For account Login and Signup button-->
       <div class="btn">
         <a href="login.html"><button id="btn-login">Login</button></a>
         <a href="signup.html"><button id="btn-signup">Signup</button></a>
       </div>
   </header>
+  
     <!--Slider Section-->
-  <div class="slider">
-    <span id="slide-1"></span>
-    <span id="slide-2"></span>
-    <span id="slide-3"></span>
-    <div class="image-container">
-      <img src="" class="slide" style="width: 300%; height: 100%;">
-      <img src="" class="slide" width="500" height="300">
-      <img src="" class="slide" width="500" height="300">
-    </div>
-    <div class="buttons">
-      <a href="#slide-1"></a>
-      <a href="#slide-2"></a>
-      <a href="#slide-3"></a>
-    </div>
-  </div>
-
+    
+ 
   <!-- Add cart section first -->
   <div class="card">
     <img src="images\download.jpg" alt="Product Image">
@@ -63,6 +55,7 @@
     <span id="number">1</span>
     <button id="incrementbtn">+</button>
   </div>
+
       <!--Add to cart section 1-->
       <div class="card">
         <img src="images\apples.jpg" alt="Product Image">
@@ -74,6 +67,7 @@
         <span id="number1">1</span>
         <button id="incrementbtn1">+</button>
       </div>
+
        <!--Add to cart section 2 -->
       <div class="card">
         <img src="images\images.jpg" alt="Product Image">
@@ -459,18 +453,18 @@
     }
   });
 
-  //  Query selection document from cart icon class
-var cartIcon = document.querySelector('.cart-icon');
+    //  Query selection document from cart icon class
+      var cartIcon = document.querySelector('.cart-icon');
 
-// Id declaration for the cart window element
-var cartWindow = document.getElementById('cart-popup');
+    // Id declaration for the cart window element
+      var cartWindow = document.getElementById('cart-popup');
 
-// click to the cart icon
-cartIcon.addEventListener('click', function() {
-  // Display of the cart window
-  cartWindow.style.display = (cartWindow.style.display === 'block') ? 'none' : 'block';
+    // click to the cart icon
+      cartIcon.addEventListener('click', function() {
+    // Display of the cart window
+      cartWindow.style.display = (cartWindow.style.display === 'block') ? 'none' : 'block';
 });
 
-  </script>
-</body>
+    </script>
+  </body>
 </html>
