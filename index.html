@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login with Firebase</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Login with Firebase</h1>
+  <button id="googleSignIn">Sign in with Google</button>
+  <button id="githubSignin">Sign in with GitHub</button>
+
+  <div id="userDetails">
+    <h2>User Details:</h2>
+    <p id="userName"></p>
+    <p id="userEmail"></p>
+    <button id="signOutButton">Sign Out</button>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
